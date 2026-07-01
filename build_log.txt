@@ -1,0 +1,30 @@
+
+> build
+> vite build
+
+vite v7.3.1 building client environment for production...
+[plugin @laravel/vite-plugin-wayfinder] Types generated for actions, routes, form variants
+transforming...
+✓ 2712 modules transformed.
+✗ Build failed in 9.77s
+error during build:
+resources/js/Pages/Guest/Landing.vue?vue&type=script&setup=true&lang.ts (45:19): "leadGeneration" is not exported by "resources/js/routes/index.ts", imported by "resources/js/Pages/Guest/Landing.vue?vue&type=script&setup=true&lang.ts".
+file: /Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/resources/js/Pages/Guest/Landing.vue?vue&type=script&setup=true&lang.ts:45:19
+
+43: import { Head, Link } from '@inertiajs/vue3';
+44: import PublicLayout from '@/Layouts/PublicLayout.vue';
+45: import { register, leadGeneration } from '@/routes';
+                       ^
+46: import { 
+47:     LayoutDashboard, Users, CheckCircle2, 
+
+    at getRollupError (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at Module.error (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:17040:16)
+    at Module.traceVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:17452:29)
+    at ModuleScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:15070:39)
+    at ChildScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at ReturnValueScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
+    at FunctionBodyScope.findVariable (file:///Applications/MAMP/htdocs/Admin-Boilerplate-AI-Develop/node_modules/rollup/dist/es/shared/node-entry.js:5673:38)
